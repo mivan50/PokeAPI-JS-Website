@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon Fetcher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
-    <button onclick="fetchData()">Fetch Pokemon</button><br>
-
+    <div class="input-container">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+        <button onclick="fetchData()">Fetch Pokemon</button>
+    </div>
+    <div id="pokemonInfo" style="display: none;">
+        <p><strong>Weight:</strong> <span id="pokemonWeight"></span> kg</p>
+        <p><strong>Height:</strong> <span id="pokemonHeight"></span> m</p>
+    </div> 
     <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
 
     <script src="index.js"></script>
