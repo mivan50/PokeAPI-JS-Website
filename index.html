@@ -11,11 +11,14 @@
         <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
         <button onclick="fetchData()">Fetch Pokemon</button>
     </div>
+    <div class="image-container">
+        <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+        <img src="" alt="Pokemon Shiny Sprite" id="pokemonShinySprite" style="display: none;">
+    </div>
     <div id="pokemonInfo" style="display: none;">
         <p><strong>Weight:</strong> <span id="pokemonWeight"></span> kg</p>
         <p><strong>Height:</strong> <span id="pokemonHeight"></span> m</p>
     </div> 
-    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
 
     <script src="index.js"></script>
 </body>

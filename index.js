@@ -17,13 +17,21 @@ async function fetchData() {
 
         const data = await response.json();
         const pokemonSprite = data.sprites.front_default;
+        const pokemonShinySprite = data.sprites.front_shiny;
         const pokemonWeight = data.weight / 10; // Convert weight to kg
         const pokemonHeight = data.height / 10; // Convert height to m
         
+        // Set sprite img in html document
         const imgElement = document.getElementById("pokemonSprite");
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";
 
+        // Set shiny sprite img in html document
+        const shinyImgElement = document.getElementById("pokemonShinySprite");
+        shinyImgElement.src = pokemonShinySprite;
+        shinyImgElement.style.display = "block"; 
+
+        // Set height and weights in html document
         const pokemonWeightElement = document.getElementById("pokemonWeight");
         const pokemonHeightElement = document.getElementById("pokemonHeight");
         

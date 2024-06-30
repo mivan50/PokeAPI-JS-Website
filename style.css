@@ -33,9 +33,15 @@ button:hover {
     background-color: #0056b3;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Adjust as needed */
+    margin-bottom: 50px;
+}
+
 img {
-    margin-top: 50px;
-    display: block;
+    margin: 0 50px; /* Adjust margins between images */
     transform: scale(2); 
     background-color: white;
     border: 1px solid black;
